@@ -11,4 +11,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withMicrofrontends(nextConfig);
+export default withMicrofrontends(nextConfig, { debug: true });
