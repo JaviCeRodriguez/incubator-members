@@ -1,13 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
   "applications": {
-    "mfe-site": {
+    "site": {
+      "packageName": "mfe-site",
       "development": {
         "local": 3000,
         "fallback": "microfrontends-marketing.labs.vercel.dev"
       }
     },
-    "mfe-members": {
+    "members": {
+      "packageName": "mfe-members",
       "development": {
         "local": 3001
       },
