@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  transpilePackages: ['incubator-ui'],
 };
 
 export default withMicrofrontends(nextConfig, { debug: true });

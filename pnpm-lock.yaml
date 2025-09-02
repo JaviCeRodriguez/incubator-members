@@ -38,6 +38,9 @@ importers:
       '@vercel/microfrontends':
         specifier: ^2.0.0
         version: 2.0.0(next@15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      incubator-ui:
+        specifier: workspace:*
+        version: link:../../packages/incubator-ui
       next:
         specifier: 15.5.2
         version: 15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -90,6 +93,9 @@ importers:
       '@vercel/microfrontends':
         specifier: ^2.0.0
         version: 2.0.0(next@15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      incubator-ui:
+        specifier: workspace:*
+        version: link:../../packages/incubator-ui
       next:
         specifier: 15.5.2
         version: 15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -151,6 +157,15 @@ importers:
       eslint-config-prettier:
         specifier: ^10.0.1
         version: 10.1.8(eslint@8.57.1)
+
+  packages/incubator-ui:
+    dependencies:
+      '@clerk/nextjs':
+        specifier: ^6.0.0
+        version: 6.31.6(next@15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@vercel/microfrontends':
+        specifier: ^2.0.0
+        version: 2.0.0(next@15.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
 
   packages/ts-config:
     dependencies:
