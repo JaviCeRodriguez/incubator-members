@@ -1,5 +1,5 @@
-import { MembersList } from '@/src/components/members/MembersList';
-import { FeedbackForm } from '@/src/components/members/FeedbackForm';
+import { MembersList } from '@/components/members/MembersList';
+import { FeedbackForm } from '@/components/members/FeedbackForm';
 
 export default function Members() {
   return (

@@ -1,10 +1,11 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
-  "globalPassThroughEnv": ["MFE_DEBUG"],
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "dev": {
       "dependsOn": ["^build"],

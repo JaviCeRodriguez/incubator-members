@@ -1,18 +1,12 @@
 {
   "name": "incubator-members",
-  "version": "0.1.0",
-  "description": "App DEMO MFEs using Multi-Zone arq",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JaviCeRodriguez/incubator-members.git"
-  },
-  "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "turbo build",
-    "checks": "turbo run build lint typecheck",
+    "check": "turbo run build lint typecheck",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,jsonc}\"",
-    "lint": "turbo lint",
+    "lint": "turbo run lint",
     "start": "turbo start",
     "typecheck": "turbo typecheck"
   },
@@ -27,13 +21,12 @@
     "cross-env": "^7.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "prettier": "^3.4.2",
-    "turbo": "2.5.2-canary.0",
-    "typescript": "5.7.3"
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@10.15.1",
   "engines": {
-    "node": "20.x",
-    "pnpm": "9.4.0"
+    "node": ">=18"
   }
 }

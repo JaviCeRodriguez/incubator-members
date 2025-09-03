@@ -1,7 +1,7 @@
-import { Hero } from '@/src/components/landing/Hero';
-import { Features } from '@/src/components/landing/Features';
-import { CommunityGrid } from '@/src/components/landing/CommunityGrid';
-import { CTA } from '@/src/components/landing/CTA';
+import { Hero } from '@/components/landing/Hero';
+import { Features } from '@/components/landing/Features';
+import { CommunityGrid } from '@/components/landing/CommunityGrid';
+import { CTA } from '@/components/landing/CTA';
 
 export default function Home() {
   return (

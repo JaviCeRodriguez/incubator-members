@@ -19,6 +19,18 @@
           "paths": ["/members", "/members/:path*"]
         }
       ]
+    },
+    "im-mfe-dashboard": {
+      "packageName": "im-mfe-dashboard",
+      "development": {
+        "local": 3002
+      },
+      "routing": [
+        {
+          "group": "dashboard",
+          "paths": ["/dashboard", "/dashboard/:path*"]
+        }
+      ]
     }
   }
 }

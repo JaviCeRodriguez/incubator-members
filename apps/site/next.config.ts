@@ -1,5 +1,5 @@
-import type { NextConfig } from 'next';
-import { withMicrofrontends } from '@vercel/microfrontends/next/config';
+import type { NextConfig } from "next";
+import { withMicrofrontends } from "@vercel/microfrontends/next/config";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: ['incubator-ui'],
+  // transpilePackages: ['incubator-ui'],
 };
 
 export default withMicrofrontends(nextConfig, { debug: true });
