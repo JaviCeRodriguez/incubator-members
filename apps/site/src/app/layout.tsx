@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { PrefetchCrossZoneLinks } from '@vercel/microfrontends/next/client';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ClerkProvider } from '@clerk/nextjs';
+import { LayoutMain } from '@repo/ui/layout-main';
 import './globals.css';
-// import { LayoutShell } from 'incubator-ui';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,8 +32,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          {/* <LayoutShell>{children}</LayoutShell> */}
-          {children}
+          <LayoutMain>{children}</LayoutMain>
           <PrefetchCrossZoneLinks />
         </body>
       </html>

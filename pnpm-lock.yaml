@@ -244,6 +244,12 @@ importers:
 
   packages/ui:
     dependencies:
+      '@clerk/nextjs':
+        specifier: ^6.0.0
+        version: 6.31.8(next@15.5.2(@babel/core@7.28.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@vercel/microfrontends':
+        specifier: ^2.0.0
+        version: 2.0.0(next@15.5.2(@babel/core@7.28.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
