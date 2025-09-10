@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { PrefetchCrossZoneLinks, PrefetchCrossZoneLinksProvider } from '@vercel/microfrontends/next/client';
 import { Geist, Geist_Mono } from "next/font/google";
+import { ClerkProvider } from '@clerk/nextjs';
+import { AuthGuard } from '../components/auth-guard';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,12 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          >
+          <PrefetchCrossZoneLinksProvider>
+            <AuthGuard>
+              {children}
+            </AuthGuard>
+            <PrefetchCrossZoneLinks />
+          </PrefetchCrossZoneLinksProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

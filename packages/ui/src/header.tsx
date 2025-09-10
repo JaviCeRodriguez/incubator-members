@@ -19,6 +19,7 @@ export function Header() {
       <nav className="hidden sm:flex items-center gap-6 text-sm">
         <Link href="/">Inicio</Link>
         <Link href="/members">Miembros</Link>
+        <Link href="/dashboard">Dashboard</Link>
       </nav>
       <div className="flex items-center gap-3">
         <SignedOut>
